@@ -1,11 +1,9 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const https = require('https');
-const { sendFile } = require('express/lib/response');
 
 
 
-const port = porcess.env.PORT;
 const app = express();
 
 app.use(express.urlencoded({
@@ -71,7 +69,7 @@ app.post('/', (req, res) => {
     request.end();
 })
 
-app.listen(port || 3000, function () {
+app.listen(process.env.PORT || 3000, function () {
     console.log(`server runing on port ${port}`)
 })
 
