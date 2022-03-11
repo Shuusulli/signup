@@ -70,7 +70,7 @@ app.post('/', (req, res) => {
 })
 
 app.listen(process.env.PORT || 3000, function () {
-    console.log(`server runing on port ${port}`)
+    console.log(`server runing on port 3000`)
 })
 
 
